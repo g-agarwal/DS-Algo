@@ -3,10 +3,10 @@ This Repository contains the code I have written for Data Structures and Algorit
 
 The Respository follows following structure:
 
-  DataStructures
+  	DataStructures
 	
-    ---- This folder will contain code for various Data structures and their standard operations
+    	---- This folder will contain code for various Data structures and their standard operations
 		
-  Algorithms
+  	Algorithms
 	
-    ----- This folder will contain code for various algorithms
+    	----- This folder will contain code for various algorithms

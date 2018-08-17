@@ -37,8 +37,8 @@ namespace Preparation.DynamicProgramming
         static bool CanSumBeFormedFromASubset(int sum, int[] A)
         {
             // Create a Memoization Matrix
-            int N = A.Length + 1;
-            bool[,] M = new bool[sum + 1, N + 1];
+            int N = A.Length;
+            bool[,] M = new bool[N + 1, sum + 1];
 
             // Initialize first column
             for (int i = 0; i <= N; i++)
@@ -54,9 +54,9 @@ namespace Preparation.DynamicProgramming
 
             // Fill rest of the memoization matrix
 
-            for (int i = 1; i < N; i++)
+            for (int i = 1; i <= N; i++)
             {
-                for (int j = 1; j < sum; j++)
+                for (int j = 1; j <= sum; j++)
                 {
                     if (j < A[i - 1])
                     {
@@ -76,8 +76,8 @@ namespace Preparation.DynamicProgramming
         public static void Main()
         {
             // Test case
-            int[] input = { 1, 3, 5, 7, 12 };
-            int sum = 8;
+            int[] input = { 1, 3, 5, 7, 12};
+            int sum = 10;
 
             bool var = CanSumBeFormedFromASubset(sum, input);
             Console.Write(var);

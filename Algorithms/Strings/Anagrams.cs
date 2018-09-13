@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Preparation.Strings
+namespace DSAlgo.Strings
 {
     public class Anagrams
     {

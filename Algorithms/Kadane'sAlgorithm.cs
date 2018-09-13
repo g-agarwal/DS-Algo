@@ -1,6 +1,6 @@
 using System;
 
-namespace Preparation
+namespace DSAlgo
 {
     class KadanesMaxSumSubArray
     {

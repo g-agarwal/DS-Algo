@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Preparation
+namespace DSAlgo
 {
     //Find the length of minimum sub array with maximum degree in an array.
     //The maximum degree of an array is the count of element with maximum frequency.For example, consider the example { 2, 2, 1, 2, 3, 1, 1}

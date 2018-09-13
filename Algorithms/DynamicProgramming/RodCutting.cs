@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Preparation.DynamicProgramming
+namespace DSAlgo.DynamicProgramming
 {
     //    Segments Cutting Problem
     // ************************

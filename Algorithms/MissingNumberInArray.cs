@@ -1,7 +1,7 @@
 using System;
 
 
-namespace Preparation
+namespace DSAlgo
 {
     class MissingElementInArray
     {

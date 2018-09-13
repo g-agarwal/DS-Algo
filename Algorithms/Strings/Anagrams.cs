@@ -65,9 +65,38 @@ namespace Preparation.Strings
             return true;
         }
 
-        public static void PrintAllAnagrams(string s1)
+        public static void GenerateAnagrams(string str)
         {
+            if (!String.IsNullOrEmpty(str))
+            {
+                GenerateAnagrams(str.ToCharArray(), 0, str.Length - 1);
+            }
+            else
+            {
+                Console.WriteLine("Empty String");
+            }
+        }
 
+        private static void GenerateAnagrams(char[] str, int start, int end)
+        {
+            if (start == end)
+                Console.WriteLine(str);
+            else
+            {
+                for (int i = start; i <= end; i++)
+                {
+                    swap(str, start, i);
+                    GenerateAnagrams(str, start + 1, end);
+                    swap(str, start, i);
+                }
+            }
+        }
+
+        private static void swap(char[] str, int i, int j)
+        {
+            char temp = str[i];
+            str[i] = str[j];
+            str[j] = temp;
         }
     }
 
@@ -79,7 +108,7 @@ namespace Preparation.Strings
             Console.WriteLine(areAnagrams);
             int modificationsToMakeAnagrams = Anagrams.MinimumModifcationsToMakeStringAnagram("ddck", "cedm");
             Console.WriteLine(modificationsToMakeAnagrams);
-
+            Anagrams.GenerateAnagrams("abcd");
             Console.Read();
         }
     }

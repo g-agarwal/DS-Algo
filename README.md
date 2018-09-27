@@ -1,7 +1,7 @@
 # DS-Algo
-This Repository contains the code for Data Structures and Algorithms using C#
+Contains code for Data Structures and Algorithms using C#
 
-The Repository follows following structure:
+Repository follows following structure:
 
   	DataStructures
 	
